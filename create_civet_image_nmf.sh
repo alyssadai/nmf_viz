@@ -367,7 +367,7 @@ printf '%s %s %s %s\n' $rmincblue > ${tmpdir}/rmincblue.map
 #Colourize left
 if (( $(echo "$leftFDR5 <= $(sort -g $leftstatmap | tail -1)" | bc) ))
 then
-  colour_object $leftbrain $leftstatmap ${tmpdir}/left_pos.obj user ${tmpdir}/rmincred.map $leftFDR5 $leftFDR1 white "$(echo "$rmincred" | tail -1 | cut -d" " -f 2-4)" replace # MODIFY
+  colour_object $leftbrain $leftstatmap ${tmpdir}/left_pos.obj user ${tmpdir}/rmincred.map $leftFDR5 $leftFDR1 white "$(echo "$rmincred" | tail -1 | cut -d" " -f 2-4)" replace
 else
   cp $leftbrain ${tmpdir}/left_pos.obj
 fi
@@ -382,7 +382,7 @@ fi
 #Colourize right
 if (( $(echo "$rightFDR5 <= $(sort -g $rightstatmap | tail -1)" | bc) ))
 then
-  colour_object $rightbrain $rightstatmap ${tmpdir}/right_pos.obj user ${tmpdir}/rmincred.map $rightFDR5 $rightFDR1 white "$(echo "$rmincred" | tail -1 | cut -d" " -f 2-4)" replace # MODIFY
+  colour_object $rightbrain $rightstatmap ${tmpdir}/right_pos.obj user ${tmpdir}/rmincred.map $rightFDR5 $rightFDR1 white "$(echo "$rmincred" | tail -1 | cut -d" " -f 2-4)" replace
 else
   cp $rightbrain ${tmpdir}/right_pos.obj
 fi
