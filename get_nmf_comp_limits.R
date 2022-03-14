@@ -10,8 +10,8 @@ leftmin <- apply(left_scores,2,min)
 leftmax <- apply(left_scores,2,max)
 left_limits <- rbind(leftmin, leftmax)
 
-rightmin <- apply(left_scores,2,min)
-rightmax <- apply(left_scores,2,max)
+rightmin <- apply(right_scores,2,min)
+rightmax <- apply(right_scores,2,max)
 right_limits <- rbind(rightmin, rightmax)
 
 # write results to text file
